@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orbit Labs — LP 3D</title>
+  <meta name="description" content="Landing page 3D criada com HTML, CSS e JavaScript puro." />
+  <meta property="og:title" content="Orbit Labs — LP 3D" />
+  <meta property="og:description" content="Uma landing page 3D futurista, responsiva e interativa." />
+  <meta name="theme-color" content="#070812" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="space" aria-hidden="true"></canvas>
+
+  <header class="nav" data-reveal>
+    <a class="brand" href="#top" aria-label="Orbit Labs">
+      <span class="brand-mark"></span>
+      <span>Orbit Labs</span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#sistema">Sistema</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#launch">Launch</a>
+    </nav>
+    <a class="nav-cta" href="#launch">Entrar na órbita</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span></span> Interface 3D / HTML CSS JS</p>
+        <h1>Uma landing page que parece sair da tela.</h1>
+        <p class="lede">Uma experiência visual com nave 3D em CSS, partículas em canvas, profundidade com parallax e microinterações — sem framework, sem build, só web pura.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#launch">Ver lançamento</a>
+          <a class="button secondary" href="#sistema">Explorar sistema</a>
+        </div>
+        <dl class="stats" aria-label="Destaques do projeto">
+          <div><dt>3D</dt><dd>CSS transform</dd></div>
+          <div><dt>0</dt><dd>frameworks</dd></div>
+          <div><dt>100%</dt><dd>responsivo</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-stage" aria-label="Objeto 3D interativo" data-reveal>
+        <div class="orbit-ring ring-one"></div>
+        <div class="orbit-ring ring-two"></div>
+        <div class="planet" id="planet">
+          <div class="planet-core"></div>
+          <div class="planet-glow"></div>
+          <div class="satellite sat-one"></div>
+          <div class="satellite sat-two"></div>
+        </div>
+        <div class="ship" id="ship" aria-hidden="true">
+          <div class="ship-body">
+            <span class="window"></span>
+            <span class="fin left"></span>
+            <span class="fin right"></span>
+            <span class="flame"></span>
+          </div>
+        </div>
+        <div class="stage-card card-a">
+          <strong>Depth</strong>
+          <span>Parallax ativo</span>
+        </div>
+        <div class="stage-card card-b">
+          <strong>Motion</strong>
+          <span>60fps feel</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section system" id="sistema">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow"><span></span> Sistema visual</p>
+        <h2>Camadas que reagem ao usuário.</h2>
+        <p>O visual combina perspectiva, luz, textura e movimento para criar uma página simples de hospedar, mas com presença de produto premium.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature tilt" data-reveal>
+          <small>01</small>
+          <h3>Canvas espacial</h3>
+          <p>Partículas renderizadas em JavaScript criam profundidade, com densidade ajustada ao tamanho da tela.</p>
+        </article>
+        <article class="feature tilt" data-reveal>
+          <small>02</small>
+          <h3>Objeto 3D em CSS</h3>
+          <p>Nave e planeta usam transforms, sombras e animações para dar sensação de volume sem bibliotecas externas.</p>
+        </article>
+        <article class="feature tilt" data-reveal>
+          <small>03</small>
+          <h3>Microinterações</h3>
+          <p>Cards respondem ao mouse, elementos entram com reveal e botões têm feedback tátil.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experiencia">
+      <div class="panel" data-reveal>
+        <div>
+          <p class="eyebrow"><span></span> Experiência</p>
+          <h2>Uma página feita para impressionar em poucos segundos.</h2>
+        </div>
+        <p>Ideal como desafio visual, demo de portfólio ou base para uma campanha de produto digital. A estrutura está pronta para trocar copy, cores e CTA sem mexer no motor visual.</p>
+      </div>
+      <div class="timeline" data-reveal>
+        <div><b>01</b><span>Primeira dobra cinematográfica</span></div>
+        <div><b>02</b><span>Prova técnica clara</span></div>
+        <div><b>03</b><span>CTA final direto</span></div>
+      </div>
+    </section>
+
+    <section class="launch" id="launch" data-reveal>
+      <div class="launch-inner">
+        <p class="eyebrow"><span></span> Launch ready</p>
+        <h2>Pronto para publicar no GitHub Pages.</h2>
+        <p>HTML, CSS e JS puro. Sem dependência de servidor. É só abrir, versionar e publicar.</p>
+        <a class="button primary" href="https://github.com/VictorDron/lp-3d-challenge" target="_blank" rel="noreferrer">Ver código no GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Orbit Labs LP 3D</span>
+    <span>Built by Linus for Victor</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
